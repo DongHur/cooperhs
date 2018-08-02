@@ -1,10 +1,13 @@
 // @flow
 import React, { Component } from 'react';
 import{BrowserRouter as Router, Route, Link} from 'react-router-dom';
+import { Navbar, Jumbotron, Button } from 'react-bootstrap';
 
 import Home from './page/Home'
 import Contact from './page/Contact'
 
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap-theme.css';
 import logo from './logo.svg';
 import './App.css';
       
@@ -17,7 +20,7 @@ class App extends Component {
           <Link to='/'>Home</Link>
           <Link to='/contact'>Contact</Link>
           <hr/>
-          
+
           <Route exact path='/' component={Home} />
           <Route path='/contact' component={Contact} />
         </div>
