@@ -1,9 +1,34 @@
 // @flow
 import React, { Component } from 'react';
+import{BrowserRouter as Router, Route, Link} from 'react-router-dom';
+
+import Home from './page/Home'
+import Contact from './page/Contact'
+
 import logo from './logo.svg';
 import './App.css';
+      
 
 class App extends Component {
+  render() {
+    return (
+      <Router>
+        <div>
+          <Link to='/'>Home</Link>
+          <Link to='/contact'>Contact</Link>
+          <hr/>
+          
+          <Route exact path='/' component={Home} />
+          <Route path='/contact' component={Contact} />
+        </div>
+      </Router>
+    );
+  }
+}
+
+
+
+{/*class App extends Component {
   render() {
     return (
       <div className="App">
@@ -17,6 +42,6 @@ class App extends Component {
       </div>
     );
   }
-}
+}*/}
 
 export default App;
