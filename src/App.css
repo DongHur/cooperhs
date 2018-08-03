@@ -1,8 +1,11 @@
 .App {
-  text-align: center;
+  /*background-color: #e3d3ff;*/
+  background-image: url("background.jpg");
+  height: 100%;
+  margin: 0;
 }
 
-.App-logo {
+/*.App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
 }
@@ -26,3 +29,4 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+*/
